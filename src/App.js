@@ -1,25 +1,24 @@
-import logo from './logo.svg';
+import { useState } from 'react';
+import Header from './Header';
 import './App.css';
 
+export const PAGE_NAMES = {
+    ABOUT: 'About',
+    PORTFOLIO: 'Portfolio',
+    CONTACT: 'Contact',
+    RESUME: 'Resume'
+};
+Object.freeze(PAGE_NAMES);
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [activePage, setActivePage] = useState(PAGE_NAMES.ABOUT);
+
+    return (
+        <div className="container">
+            <Header activePage={activePage} onNavigate={setActivePage} />
+            <p>Currently showing: {activePage}</p>
+        </div>
+    );
 }
 
 export default App;
