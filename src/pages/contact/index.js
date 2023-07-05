@@ -28,9 +28,10 @@ function ContactPage() {
             <Formik
                 initialValues={initialValues}
                 validationSchema={validationSchema}
-                onSubmit={(values, { setSubmitting }) => {
+                onSubmit={(values, { setSubmitting, resetForm }) => {
                     alert(`Submitting ${JSON.stringify(values)}`);
                     setSubmitting(false);
+                    resetForm();
                 }}
             >
                 {props => 
