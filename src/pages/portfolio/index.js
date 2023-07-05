@@ -47,7 +47,7 @@ function PortfolioPage() {
             <h2>My Projects</h2>
             <div className='row g-3'>
                 {projects.map(project => 
-                    <div className='col-md-6'>
+                    <div className='col-md-6' key={project.bgClass}>
                         <div className={`project-list-item ${project.bgClass} p-3`}>
                             <div className='bg-body p-3'>
                                 <h3>{project.title}</h3>
