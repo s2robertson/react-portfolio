@@ -1,0 +1,33 @@
+.project-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    min-height: 16em;
+}
+
+.book-search-bg {
+    background-image: url("./pexels-huỳnh-đạt-2177482-sm.jpg");
+}
+
+.bill-payment-tracker-bg {
+    background-image: url("./pexels-pavel-danilyuk-7654579-sm.jpg");
+}
+
+.blog-site-bg {
+    background-image: url("./pexels-vlada-karpovich-4050468-sm.jpg");
+}
+
+.weather-dashboard-bg {
+    background-image: url("./pexels-brett-sayles-912364-sm.jpg");
+}
+
+.quiz-game-bg {
+    background-image: url("./pexels-andy-barbour-6683394-sm.jpg");
+}
+
+.jate-bg {
+    background-image: url("./pexels-jules-amé-4078342-sm.jpg");
+}
