@@ -2,7 +2,7 @@ import photo from './steven-small.jpg';
 
 function AboutPage() {
     return (
-        <main>
+        <main className='clearfix'>
             <h2>About Me</h2>
             <div>
                 <img
