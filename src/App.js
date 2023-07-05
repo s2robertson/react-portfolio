@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import Header from './Header';
+import Header from './components/Header';
+import Navigation from './components/Navigation';
 import AboutPage from './pages/about';
 import PortfolioPage from './pages/portfolio';
 import ContactPage from './pages/contact';
@@ -33,7 +34,9 @@ function App() {
 
     return (
         <div className="container">
-            <Header activePage={activePage} onNavigate={setActivePage} />
+            <Header>
+                <Navigation activePage={activePage} onNavigate={setActivePage} />
+            </Header>
             {page}
         </div>
     );
