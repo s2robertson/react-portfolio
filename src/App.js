@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Header from './components/Header';
 import Navigation from './components/Navigation';
+import Footer from './components/Footer';
 import AboutPage from './pages/about';
 import PortfolioPage from './pages/portfolio';
 import ContactPage from './pages/contact';
@@ -38,6 +39,7 @@ function App() {
                 <Navigation activePage={activePage} onNavigate={setActivePage} />
             </Header>
             {page}
+            <Footer />
         </div>
     );
 }
