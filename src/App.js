@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Header from './Header';
 import AboutPage from './pages/about';
 import PortfolioPage from './pages/portfolio';
+import ResumePage from './pages/resume';
 
 export const PAGE_NAMES = {
     ABOUT: 'About',
@@ -17,10 +18,13 @@ function App() {
     let page;
     switch (activePage) {
         case PAGE_NAMES.PORTFOLIO:
-            page = <PortfolioPage />
+            page = <PortfolioPage />;
+            break;
+        case PAGE_NAMES.RESUME:
+            page = <ResumePage />;
             break;
         default:
-            page = <AboutPage />
+            page = <AboutPage />;
     }
 
     return (
