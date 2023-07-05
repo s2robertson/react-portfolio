@@ -1,4 +1,4 @@
-import photo from '../steven-small.jpg';
+import photo from './steven-small.jpg';
 
 function AboutPage() {
     return (

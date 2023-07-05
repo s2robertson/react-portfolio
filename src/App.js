@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Header from './Header';
-import AboutPage from './pages/AboutPage';
+import AboutPage from './pages/about';
 
 export const PAGE_NAMES = {
     ABOUT: 'About',
