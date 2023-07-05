@@ -22,7 +22,7 @@ const validationSchema = Yup.object({
 
 function ContactPage() {
     return (
-        <main>
+        <>
             <h2>Contact Me</h2>
             <p>Still in development...</p>
             <Formik
@@ -49,7 +49,7 @@ function ContactPage() {
                     </Form>
                 }
             </Formik>
-        </main>
+        </>
     )
 }
 

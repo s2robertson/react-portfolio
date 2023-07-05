@@ -43,12 +43,12 @@ const projects = [
 
 function PortfolioPage() {
     return (
-        <main>
+        <>
             <h2>My Projects</h2>
             <div className='row g-3'>
                 {projects.map(project => (<Project project={project} className='col-md-6' key={project.bgClass} />))}
             </div>
-        </main>
+        </>
     )
 }
 
