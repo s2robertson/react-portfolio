@@ -1,5 +1,6 @@
 import './Portfolio.css';
 
+// could be turned into a prop
 const projects = [
     {
         title: 'Bill Payment Tracker',
@@ -44,13 +45,15 @@ function PortfolioPage() {
     return (
         <main>
             <h2>My Projects</h2>
-            <div className='row'>
+            <div className='row g-3'>
                 {projects.map(project => 
-                    <div className={`project-list-item ${project.bgClass} col-md-6`}>
-                        <div className='bg-body p-3'>
-                            <h3>{project.title}</h3>
-                            <p>{project.description}</p>
-                            <p><a href={project.repoUrl}>Repo</a> <a href={project.deployedUrl}>Deployed</a></p>
+                    <div className='col-md-6'>
+                        <div className={`project-list-item ${project.bgClass} p-3`}>
+                            <div className='bg-body p-3'>
+                                <h3>{project.title}</h3>
+                                <p>{project.description}</p>
+                                <p><a href={project.repoUrl}>Repo</a> <a href={project.deployedUrl}>Deployed</a></p>
+                            </div>
                         </div>
                     </div>
                 )}
