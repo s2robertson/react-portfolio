@@ -7,40 +7,42 @@ import PortfolioPage from './pages/portfolio';
 import ContactPage from './pages/contact';
 import ResumePage from './pages/resume';
 
-export const PAGE_NAMES = {
-    ABOUT: 'About',
-    PORTFOLIO: 'Portfolio',
-    CONTACT: 'Contact',
-    RESUME: 'Resume'
-};
-Object.freeze(PAGE_NAMES);
+import './App.css';
+
+const PAGES = [
+    {
+        label: 'About Me',
+        url: '#about',
+        component: () => <AboutPage />
+    }, {
+        label: 'Portfolio',
+        url: '#portfolio',
+        component: () => <PortfolioPage />
+    }, {
+        label: 'Contact',
+        url: '#contact',
+        component: () => <ContactPage />
+    }, {
+        label: 'Resume',
+        url: '#resume',
+        component: () => <ResumePage />
+    }
+];
+Object.freeze(PAGES);
 
 function App() {
-    const [activePage, setActivePage] = useState(PAGE_NAMES.ABOUT);
-
-    let page;
-    switch (activePage) {
-        case PAGE_NAMES.PORTFOLIO:
-            page = <PortfolioPage />;
-            break;
-        case PAGE_NAMES.CONTACT:
-            page = <ContactPage />;
-            break;
-        case PAGE_NAMES.RESUME:
-            page = <ResumePage />;
-            break;
-        default:
-            page = <AboutPage />;
-    }
+    const [activePage, setActivePage] = useState(PAGES[0]);
 
     return (
-        <div className="container">
+        <>
             <Header>
-                <Navigation activePage={activePage} onNavigate={setActivePage} />
+                <Navigation pages={PAGES} activePage={activePage} onNavigate={setActivePage} />
             </Header>
-            {page}
+            <main className='container p-3 clearfix'>
+                {activePage.component()}
+            </main>
             <Footer />
-        </div>
+        </>
     );
 }
 
