@@ -1,8 +1,20 @@
 :root {
   --color-primary: #336699;
   --color-dark: #2f4858;
-  --color-light: #86bbd8;
+  --color-light: #f5fffa;
   --color-contrast: white;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+a {
+  --bs-link-color-rgb: 51, 102, 153;
+}
+
+a:hover {
+  --bs-link-hover-color-rgb: 47, 72, 88;
 }
 
 /* stick footer to bottom */
@@ -10,6 +22,7 @@ div#root {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: var(--color-light);
 }
 footer {
   margin-top: auto;
@@ -32,7 +45,7 @@ footer {
   --bs-btn-active-border-color: var(--color-contrast);
   --bs-btn-disabled-color: var(--color-dark);
   --bs-btn-disabled-bg: var(--color-light);
-  --bs-btn-disabled-border-color: var(--color-light);
+  --bs-btn-disabled-border-color: var(--color-dark);
 }
 
 .App {
