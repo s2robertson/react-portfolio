@@ -1,3 +1,40 @@
+:root {
+  --color-primary: #336699;
+  --color-dark: #2f4858;
+  --color-light: #86bbd8;
+  --color-contrast: white;
+}
+
+/* stick footer to bottom */
+div#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+footer {
+  margin-top: auto;
+}
+
+.bg-custom {
+  background-color: var(--color-primary);
+  color: var(--color-contrast);
+}
+
+.btn-custom {
+  --bs-btn-color: var(--color-contrast);
+  --bs-btn-bg: var(--color-primary);
+  --bs-btn-border-color: var(--color-primary);
+  --bs-btn-hover-color: var(--color-contrast);
+  --bs-btn-hover-bg: var(--color-dark);
+  --bs-btn-hover-border-color: var(--color-dark);
+  --bs-btn-active-color: var(--color-contrast);
+  --bs-btn-active-bg: var(--color-dark);
+  --bs-btn-active-border-color: var(--color-contrast);
+  --bs-btn-disabled-color: var(--color-dark);
+  --bs-btn-disabled-bg: var(--color-light);
+  --bs-btn-disabled-border-color: var(--color-light);
+}
+
 .App {
   text-align: center;
 }
