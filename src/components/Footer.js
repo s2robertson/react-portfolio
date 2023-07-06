@@ -13,8 +13,10 @@ const footerLinks = [
 
 function Footer() {
     return (
-        <footer className="d-flex flex-column flex-sm-row align-items-center justify-content-center">
-            {footerLinks.map(link => <a href={link.url} className="btn">{link.label}</a>)}
+        <footer className="bg-custom">
+            <div className="container p-3 d-flex flex-column flex-sm-row align-items-center justify-content-center">
+                {footerLinks.map(link => <a href={link.url} className="btn btn-custom">{link.label}</a>)}
+            </div>
         </footer>
     )
 }
