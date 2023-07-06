@@ -6,6 +6,11 @@
     background-position: center;
     background-size: cover;
     min-height: 16em;
+    border: 5px solid var(--color-dark);
+}
+
+.project-list-item a {
+    color: var(--color-contrast);
 }
 
 .book-search-bg {
