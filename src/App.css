@@ -1,7 +1,8 @@
 :root {
+  /* colors were inspired by https://coolors.co/336699-86bbd8-2f4858-9ee493-daf7dc */
   --color-primary: #336699;
   --color-dark: #2f4858;
-  --color-light: #f5fffa;
+  --color-light: #f5fffa; /* mintcream */
   --color-contrast: white;
 }
 
