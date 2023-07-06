@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.1fae2ffb.css",
+    "main.js": "/react-portfolio/static/js/main.e5763080.js",
+    "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/pexels-huỳnh-đạt-2177482-sm.jpg": "/react-portfolio/static/media/pexels-huỳnh-đạt-2177482-sm.8d32caa304edfdee283d.jpg",
+    "static/media/pexels-pavel-danilyuk-7654579-sm.jpg": "/react-portfolio/static/media/pexels-pavel-danilyuk-7654579-sm.f359b1e59097346d33ac.jpg",
+    "static/media/pexels-jules-amé-4078342-sm.jpg": "/react-portfolio/static/media/pexels-jules-amé-4078342-sm.8425bb1782ec6bf8514d.jpg",
+    "static/media/pexels-vlada-karpovich-4050468-sm.jpg": "/react-portfolio/static/media/pexels-vlada-karpovich-4050468-sm.bd795b7b1c846253ff4c.jpg",
+    "static/media/pexels-andy-barbour-6683394-sm.jpg": "/react-portfolio/static/media/pexels-andy-barbour-6683394-sm.ed2bc1481d27da3947bd.jpg",
+    "static/media/pexels-brett-sayles-912364-sm.jpg": "/react-portfolio/static/media/pexels-brett-sayles-912364-sm.da7af1deaf84231d2883.jpg",
+    "index.html": "/react-portfolio/index.html",
+    "main.1fae2ffb.css.map": "/react-portfolio/static/css/main.1fae2ffb.css.map",
+    "main.e5763080.js.map": "/react-portfolio/static/js/main.e5763080.js.map",
+    "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1fae2ffb.css",
+    "static/js/main.e5763080.js"
+  ]
+}
