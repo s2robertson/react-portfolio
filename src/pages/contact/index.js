@@ -41,7 +41,7 @@ function ContactPage() {
                         <FormField id='message' name='message' label='Message' as='textarea' />
                         <button
                             type='submit'
-                            className='btn'
+                            className='btn btn-custom'
                             disabled={props.isSubmitting}
                         >
                             Submit
