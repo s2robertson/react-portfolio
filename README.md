@@ -22,6 +22,7 @@ Stock photos used:
 * https://www.pexels.com/photo/landscape-photograph-of-skies-912364/
 * https://www.pexels.com/photo/test-papers-and-pencil-on-the-desk-6683394/
 * https://www.pexels.com/photo/person-using-black-dell-laptop-computer-4078342/
+* https://www.pexels.com/photo/person-in-black-suit-hired-an-employee-3760069/
 
 ## License
 MIT

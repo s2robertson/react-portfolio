@@ -33,11 +33,11 @@ const projects = [
         repoUrl: 'https://github.com/s2robertson/quiz-game',
         deployedUrl: 'https://s2robertson.github.io/quiz-game/'
     }, {
-        title: 'Text Editor PWA',
-        description: 'Progressive Web Application, Workbox, Webpack',
-        bgClass: 'jate-bg',
-        repoUrl: 'https://github.com/s2robertson/jate-text-editor',
-        deployedUrl: 'https://s2robertson-jate-c143c4308be7.herokuapp.com/'
+        title: 'Freelancer Platform',
+        description: 'Full-stack MERN, GraphQL',
+        bgClass: 'freelancer-bg',
+        repoUrl: 'https://github.com/s2robertson/freelance-platform',
+        deployedUrl: 'https://freelance-platform-5f9607a54217.herokuapp.com/'
     }
 ]
 
