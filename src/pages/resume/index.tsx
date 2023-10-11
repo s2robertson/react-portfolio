@@ -17,7 +17,7 @@ function ResumePage() {
             <h2>My Proficiencies</h2>
             <ul className="list-group">
                 {proficiencies.map(proficiency => 
-                    <li className="list-group-item">{proficiency}</li>
+                    <li className="list-group-item" key={proficiency}>{proficiency}</li>
                 )}
             </ul>
         </>
