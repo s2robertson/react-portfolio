@@ -1,13 +1,9 @@
+import React from 'react';
 import { Formik, Form } from 'formik';
 import * as Yup from 'yup';
 
 import FormField from '../../components/FormField';
 
-const initialValues = {
-    name: '',
-    email: '',
-    message: ''
-};
 const validationSchema = Yup.object({
     name: Yup.string()
         .trim()
@@ -19,6 +15,13 @@ const validationSchema = Yup.object({
         .trim()
         .required('Message is required')
 });
+
+type ContactDetails = Yup.InferType<typeof validationSchema>
+const initialValues: ContactDetails = {
+    name: '',
+    email: '',
+    message: ''
+};
 
 function ContactPage() {
     return (
