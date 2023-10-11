@@ -1,3 +1,5 @@
+import React from 'react';
+
 const footerLinks = [
     {
         label: 'GitHub',
@@ -15,7 +17,7 @@ function Footer() {
     return (
         <footer className="bg-custom">
             <div className="container p-3 d-flex flex-column flex-sm-row align-items-center justify-content-center">
-                {footerLinks.map(link => <a href={link.url} className="btn btn-custom">{link.label}</a>)}
+                {footerLinks.map(link => <a href={link.url} key={link.url} className="btn btn-custom">{link.label}</a>)}
             </div>
         </footer>
     )
