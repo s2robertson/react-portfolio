@@ -7,10 +7,10 @@ const footerLinks = [
     }, {
         label: 'LinkedIn',
         url: 'https://www.linkedin.com/in/s2robertson/'
-    }, {
+    }/*, {
         label: 'Stack Overflow',
         url: 'https://stackoverflow.com/users/22181321/s2robertson'
-    }
+    }*/
 ]
 
 function Footer() {
