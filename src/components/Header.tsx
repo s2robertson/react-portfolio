@@ -1,4 +1,6 @@
-function Header({ children }) {
+import React from 'react';
+
+function Header({ children }: { children: React.ReactNode }) {
     return (
         <header className="bg-custom">
             <div className="container p-3 d-flex flex-column flex-lg-row align-items-center">
