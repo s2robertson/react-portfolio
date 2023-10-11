@@ -1,8 +1,9 @@
+import React from 'react';
 import { useState } from 'react';
-import Header from './components/Header.tsx';
-import Navigation from './components/Navigation.tsx';
-import Footer from './components/Footer.tsx';
-import AboutPage from './pages/about/index.tsx';
+import Header from './components/Header';
+import Navigation from './components/Navigation';
+import Footer from './components/Footer';
+import AboutPage from './pages/about';
 import PortfolioPage from './pages/portfolio';
 import ContactPage from './pages/contact';
 import ResumePage from './pages/resume';
