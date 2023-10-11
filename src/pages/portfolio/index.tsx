@@ -1,3 +1,4 @@
+import React from 'react';
 import './Portfolio.css';
 
 // could be turned into a prop
@@ -52,7 +53,12 @@ function PortfolioPage() {
     )
 }
 
-function Project({ project, className }) {
+interface ProjectProps {
+    project: typeof projects[number],
+    className: string
+}
+
+function Project({ project, className }: ProjectProps) {
     return (
         <div className={className}>
             <div className={`project-list-item ${project.bgClass} p-3`}>
