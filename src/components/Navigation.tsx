@@ -3,7 +3,7 @@ import React from 'react';
 interface Page {
     label: string,
     url: string,
-    component: () => React.ReactNode
+    component: () => JSX.Element
 }
 
 interface NavigationProps {
