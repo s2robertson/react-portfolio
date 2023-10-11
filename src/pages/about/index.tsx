@@ -1,3 +1,4 @@
+import React from 'react';
 import photo from './steven-small.jpg';
 
 function AboutPage() {
