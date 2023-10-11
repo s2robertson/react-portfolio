@@ -1,4 +1,18 @@
-function Navigation({ pages, activePage, onNavigate }) {
+import React from 'react';
+
+interface Page {
+    label: string,
+    url: string,
+    component: () => React.ReactNode
+}
+
+interface NavigationProps {
+    pages: Page[],
+    activePage: Page,
+    onNavigate: React.Dispatch<React.SetStateAction<Page>>
+}
+
+function Navigation({ pages, activePage, onNavigate }: NavigationProps) {
     return (
         <nav className="d-flex flex-column flex-sm-row">
             {pages.map(page => (
