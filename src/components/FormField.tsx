@@ -1,15 +1,23 @@
+import React from 'react';
 import { useField } from 'formik';
+
+interface FormFieldProps {
+    id: string,
+    name: string,
+    label: string,
+    as?: 'input' | 'textarea'
+}
 
 const textareaRE = /textarea/i;
 
-function FormField({ id, name, label, as = 'input' }) {
+function FormField({ id, name, label, as = 'input' }: FormFieldProps) {
     const [field, meta] = useField(name);
 
     let control;
     if (textareaRE.test(as)) {
-        control = <textarea id={id} name={name} rows={10} className='form-control' {...field} {...meta} />;
+        control = <textarea id={id} rows={10} className='form-control' {...field} {...meta} />;
     } else {
-        control = <input id={id} name={name} className='form-control' {...field} {...meta} />;
+        control = <input id={id} className='form-control' {...field} {...meta} />;
     }
 
     return (
