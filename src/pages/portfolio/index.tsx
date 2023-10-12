@@ -1,4 +1,3 @@
-import React from 'react';
 import './Portfolio.css';
 
 // could be turned into a prop

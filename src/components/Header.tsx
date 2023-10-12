@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { pages, useNavigation } from '../Navigation';
 
 function Header() {
