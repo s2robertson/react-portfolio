@@ -1,5 +1,7 @@
-import React from 'react';
 import { useState } from 'react';
+// import { QueryParamProvider } from 'use-query-params';
+// import { WindowHistoryAdapter } from 'use-query-params/adapters/window';
+
 import Header from './components/Header';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
@@ -14,19 +16,19 @@ const PAGES = [
     {
         label: 'About Me',
         url: '#about',
-        component: () => <AboutPage />
+        component: <AboutPage />
     }, {
         label: 'Portfolio',
         url: '#portfolio',
-        component: () => <PortfolioPage />
+        component: <PortfolioPage />
     }, {
         label: 'Contact',
         url: '#contact',
-        component: () => <ContactPage />
+        component: <ContactPage />
     }, {
         label: 'Resume',
         url: '#resume',
-        component: () => <ResumePage />
+        component: <ResumePage />
     }
 ];
 Object.freeze(PAGES);
@@ -35,15 +37,15 @@ function App() {
     const [activePage, setActivePage] = useState(PAGES[0]);
 
     return (
+        //<QueryParamProvider adapter={WindowHistoryAdapter}>
         <>
-            <Header>
-                <Navigation pages={PAGES} activePage={activePage} onNavigate={setActivePage} />
-            </Header>
+            <Header pages={PAGES} activePage={activePage} onNavigate={setActivePage} />
             <main className='container p-3 clearfix'>
-                {activePage.component()}
+                {activePage.component}
             </main>
             <Footer />
         </>
+        //</QueryParamProvider>
     );
 }
 
